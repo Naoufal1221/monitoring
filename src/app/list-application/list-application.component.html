@@ -1,0 +1,6 @@
+<div class="card bg-success text-white" *ngFor="let apps of applications | async">
+    <div class="card-body">
+        <span>{{apps.applicationName}}</span> 
+        <button (click)="deleteApplication(apps.id)" class="btn btn-danger">Delete</button>
+    </div>
+  </div>
